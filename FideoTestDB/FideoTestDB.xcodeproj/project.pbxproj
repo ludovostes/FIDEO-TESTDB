@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F21D0C412ABC1EB10042F243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0C402ABC1EB10042F243 /* AppDelegate.swift */; };
 		F21D0C432ABC1EB10042F243 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0C422ABC1EB10042F243 /* SceneDelegate.swift */; };
-		F21D0C452ABC1EB10042F243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0C442ABC1EB10042F243 /* ViewController.swift */; };
+		F21D0C452ABC1EB10042F243 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0C442ABC1EB10042F243 /* HomeViewController.swift */; };
 		F21D0C482ABC1EB10042F243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21D0C462ABC1EB10042F243 /* Main.storyboard */; };
 		F21D0C4A2ABC1EB20042F243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21D0C492ABC1EB20042F243 /* Assets.xcassets */; };
 		F21D0C4D2ABC1EB20042F243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21D0C4B2ABC1EB20042F243 /* LaunchScreen.storyboard */; };
@@ -32,17 +32,23 @@
 		F21D0C762ABC1FAA0042F243 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = F21D0C752ABC1FAA0042F243 /* FirebaseInstallations */; };
 		F21D0C782ABC1FAA0042F243 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F21D0C772ABC1FAA0042F243 /* FirebaseStorage */; };
 		F21D0C7A2ABC1FAA0042F243 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F21D0C792ABC1FAA0042F243 /* FirebaseStorageCombine-Community */; };
+		F21D0C7E2ABC386E0042F243 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0C7D2ABC386E0042F243 /* SignUpViewController.swift */; };
+		F21D0C802ABC3CFE0042F243 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D0C7F2ABC3CFE0042F243 /* SignInViewController.swift */; };
+		F21D0C822ABC3E7B0042F243 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F21D0C812ABC3E7B0042F243 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F21D0C3D2ABC1EB10042F243 /* FideoTestDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FideoTestDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21D0C402ABC1EB10042F243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F21D0C422ABC1EB10042F243 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F21D0C442ABC1EB10042F243 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F21D0C442ABC1EB10042F243 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F21D0C472ABC1EB10042F243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F21D0C492ABC1EB20042F243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F21D0C4C2ABC1EB20042F243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F21D0C4E2ABC1EB20042F243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F21D0C7D2ABC386E0042F243 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F21D0C7F2ABC3CFE0042F243 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F21D0C812ABC3E7B0042F243 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +102,14 @@
 			children = (
 				F21D0C402ABC1EB10042F243 /* AppDelegate.swift */,
 				F21D0C422ABC1EB10042F243 /* SceneDelegate.swift */,
-				F21D0C442ABC1EB10042F243 /* ViewController.swift */,
+				F21D0C442ABC1EB10042F243 /* HomeViewController.swift */,
 				F21D0C462ABC1EB10042F243 /* Main.storyboard */,
 				F21D0C492ABC1EB20042F243 /* Assets.xcassets */,
 				F21D0C4B2ABC1EB20042F243 /* LaunchScreen.storyboard */,
 				F21D0C4E2ABC1EB20042F243 /* Info.plist */,
+				F21D0C812ABC3E7B0042F243 /* GoogleService-Info.plist */,
+				F21D0C7D2ABC386E0042F243 /* SignUpViewController.swift */,
+				F21D0C7F2ABC3CFE0042F243 /* SignInViewController.swift */,
 			);
 			path = FideoTestDB;
 			sourceTree = "<group>";
@@ -188,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F21D0C4D2ABC1EB20042F243 /* LaunchScreen.storyboard in Resources */,
+				F21D0C822ABC3E7B0042F243 /* GoogleService-Info.plist in Resources */,
 				F21D0C4A2ABC1EB20042F243 /* Assets.xcassets in Resources */,
 				F21D0C482ABC1EB10042F243 /* Main.storyboard in Resources */,
 			);
@@ -200,8 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F21D0C452ABC1EB10042F243 /* ViewController.swift in Sources */,
+				F21D0C452ABC1EB10042F243 /* HomeViewController.swift in Sources */,
 				F21D0C412ABC1EB10042F243 /* AppDelegate.swift in Sources */,
+				F21D0C7E2ABC386E0042F243 /* SignUpViewController.swift in Sources */,
+				F21D0C802ABC3CFE0042F243 /* SignInViewController.swift in Sources */,
 				F21D0C432ABC1EB10042F243 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
