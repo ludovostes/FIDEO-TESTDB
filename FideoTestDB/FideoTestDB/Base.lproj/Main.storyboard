@@ -98,8 +98,8 @@
                                 <rect key="frame" x="0.0" y="152" width="393" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iT4-LN-y00">
-                                <rect key="frame" x="318.66666666666669" y="59" width="64.333333333333314" height="34.333333333333343"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iT4-LN-y00">
+                                <rect key="frame" x="10" y="59" width="373" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Done"/>
                                 <connections>
@@ -112,6 +112,7 @@
                         <constraints>
                             <constraint firstItem="sTj-lA-S5c" firstAttribute="leading" secondItem="M3j-Zg-yeo" secondAttribute="leading" constant="50" id="95B-tl-PdM"/>
                             <constraint firstItem="M3j-Zg-yeo" firstAttribute="trailing" secondItem="iT4-LN-y00" secondAttribute="trailing" constant="10" id="EAM-vR-9Ni"/>
+                            <constraint firstItem="iT4-LN-y00" firstAttribute="leading" secondItem="M3j-Zg-yeo" secondAttribute="leading" constant="10" id="G7C-lx-oDe"/>
                             <constraint firstItem="iT4-LN-y00" firstAttribute="top" secondItem="M3j-Zg-yeo" secondAttribute="top" id="LKE-MN-aoh"/>
                             <constraint firstItem="BZ4-Jm-fl8" firstAttribute="leading" secondItem="M3j-Zg-yeo" secondAttribute="leading" constant="10" id="cpo-5P-Tgl"/>
                             <constraint firstItem="BZ4-Jm-fl8" firstAttribute="top" secondItem="iT4-LN-y00" secondAttribute="bottom" constant="10" id="ed7-6G-wWH"/>
@@ -137,8 +138,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiW-cH-jIL">
-                                <rect key="frame" x="318.66666666666669" y="59" width="64.333333333333314" height="34.333333333333343"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiW-cH-jIL">
+                                <rect key="frame" x="10" y="59" width="373" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Done"/>
                                 <connections>
@@ -195,6 +196,9 @@
                                 <rect key="frame" x="50" y="773.66666666666663" width="293" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="S'inscrire"/>
+                                <connections>
+                                    <action selector="signUpTap:" destination="XcB-Jp-3Kt" eventType="touchUpInside" id="BPL-OM-Yrc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="puv-iy-2jM"/>
@@ -203,6 +207,7 @@
                             <constraint firstItem="WAk-uc-iI6" firstAttribute="leading" secondItem="puv-iy-2jM" secondAttribute="leading" constant="10" id="1op-vS-NaW"/>
                             <constraint firstItem="puv-iy-2jM" firstAttribute="trailing" secondItem="BiW-cH-jIL" secondAttribute="trailing" constant="10" id="CGC-uI-NY0"/>
                             <constraint firstItem="Rft-qn-aYK" firstAttribute="centerY" secondItem="gDZ-69-txq" secondAttribute="centerY" id="Hy9-p3-PZP"/>
+                            <constraint firstItem="BiW-cH-jIL" firstAttribute="leading" secondItem="puv-iy-2jM" secondAttribute="leading" constant="10" id="SLJ-D7-7BV"/>
                             <constraint firstItem="arL-Ml-uGW" firstAttribute="leading" secondItem="puv-iy-2jM" secondAttribute="leading" constant="50" id="ir8-wL-q2g"/>
                             <constraint firstItem="Rft-qn-aYK" firstAttribute="leading" secondItem="puv-iy-2jM" secondAttribute="leading" constant="50" id="jGD-GA-rgN"/>
                             <constraint firstItem="puv-iy-2jM" firstAttribute="trailing" secondItem="Rft-qn-aYK" secondAttribute="trailing" constant="50" id="lf8-na-RMp"/>
@@ -214,6 +219,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4gz-uf-P6t"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="LTN-1O-iF2" id="zRk-4r-lak"/>
+                        <outlet property="firstnameTextField" destination="rZm-5f-Da3" id="9P2-i1-hzF"/>
+                        <outlet property="lastnameTextField" destination="vtY-zj-Ya8" id="Il9-TN-Amh"/>
+                        <outlet property="passwordConfirmationTextField" destination="dsE-5e-TDx" id="aAP-UU-vQu"/>
+                        <outlet property="passwordTextField" destination="JLV-1e-avK" id="3J8-h6-j33"/>
+                        <outlet property="phoneNumberTextField" destination="Ucq-fj-u2J" id="Fhf-Jz-U48"/>
+                        <outlet property="usernametextField" destination="Dij-5C-KJJ" id="ob6-PK-MiI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDf-FM-CIF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

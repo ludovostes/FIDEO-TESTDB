@@ -9,6 +9,15 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    //MARK: - Properties
+    @IBOutlet weak var usernametextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var lastnameTextField: UITextField!
+    @IBOutlet weak var firstnameTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordConfirmationTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,5 +29,8 @@ class SignUpViewController: UIViewController {
         dismiss(animated: true)
     }
     
-
+    
+    @IBAction func signUpTap(_ sender: Any) {
+    }
+    
 }
